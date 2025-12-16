@@ -5,7 +5,7 @@ type UserData = {
     balance: number;
 };
 
-const user: UserData[] = [
+const userAd: UserData[] = [
     {
         name: "Shiva",
         age: 25,

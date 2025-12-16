@@ -104,5 +104,20 @@ enum Role {
 
 const myRole: Role = Role.USER
 if(myRole === Role.USER){
-    console.log("Role is:",myRole)
+    // console.log("Role is:",myRole)
 }
+
+// STEP 7 Generics Advance 
+
+function identity<T>(value: T): T {
+    return value
+}
+identity<string>("Hello")
+identity<number>(100)
+
+//Real use API Response
+function apiResponse<T>(data: T): T{
+    return data
+}
+
+apiResponse<user>({id: 1, name: "shiva"})

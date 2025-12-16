@@ -60,5 +60,16 @@ var Role;
 })(Role || (Role = {}));
 var myRole = Role.USER;
 if (myRole === Role.USER) {
-    console.log("Role is:", myRole);
+    // console.log("Role is:",myRole)
 }
+// STEP 7 Generics Advance 
+function identity(value) {
+    return value;
+}
+identity("Hello");
+identity(100);
+//Real use API Response
+function apiResponse(data) {
+    return data;
+}
+apiResponse({ id: 1, name: "shiva" });
